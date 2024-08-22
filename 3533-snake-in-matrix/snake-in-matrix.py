@@ -38,4 +38,12 @@
 
 class Solution:
     def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
-        return sum(1 if cmd == "RIGHT" else -1 if cmd == "LEFT" else n if cmd == "DOWN" else -n for cmd in commands)
+        c= Counter(commands)
+        move_x = c['RIGHT'] - c['LEFT']
+        move_y = c['DOWN'] - c['UP']
+
+        return move_x + move_y*n
+
+# class Solution:
+#     def finalPositionOfSnake(self, n: int, commands: List[str]) -> int:
+#         return sum(1 if cmd == "RIGHT" else -1 if cmd == "LEFT" else n if cmd == "DOWN" else -n for cmd in commands)
