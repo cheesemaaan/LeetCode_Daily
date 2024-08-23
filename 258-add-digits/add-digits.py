@@ -12,5 +12,5 @@ class Solution:
                 if answer < 10:
                     return answer
                     
-            return 0
+           
         
