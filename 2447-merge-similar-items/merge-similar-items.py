@@ -16,5 +16,5 @@ class Solution:
                 count_dict[value] += weight
             else:
                 count_dict[value] +=weight
-        print(list(count_dict.items()))
+        
         return [[key, value] for key, value in sorted(count_dict.items())]
