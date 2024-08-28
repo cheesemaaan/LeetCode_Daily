@@ -3,7 +3,7 @@ class Solution:
         answer = 0 
         for i in range(len(tickets)):
             if i <= k:
-                if tickets[i] < tickets[k]:
+                if tickets[i] <= tickets[k]:
                     answer += tickets[i]
                 else:
                     answer += tickets[k]
