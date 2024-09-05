@@ -5,5 +5,5 @@ class Solution:
             for j in range(len(grid[i])):
                 if grid[i][j] < 0 :
                     answer +=1
-                    print(grid[i][j])
+                    
         return answer
