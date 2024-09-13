@@ -7,7 +7,6 @@ class Solution:
                 count+=1
                 count_dict[c]=[i,count]
             else:
-                count_dict[c][1] +=1
                 return c
         
         
