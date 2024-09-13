@@ -9,6 +9,6 @@ class Solution:
             else:
                 count_dict[c][1] +=1
                 return c
-        print(count_dict)
+        
         
 
