@@ -16,7 +16,6 @@ class Solution:
             else:
                 temp=max(dec,inc,temp)
                 inc =1
-                dec =1
-        print(temp,inc,dec)  
-        answer = max(temp,inc,dec)
-        return answer
+                dec =1  
+        
+        return temp
