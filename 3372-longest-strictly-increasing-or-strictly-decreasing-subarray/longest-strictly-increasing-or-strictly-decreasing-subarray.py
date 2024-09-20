@@ -14,8 +14,6 @@ class Solution:
                 temp=max(dec,inc,temp)
                 dec =1
             else:
-                temp=max(dec,inc,temp)
                 inc =1
                 dec =1  
-        
         return temp
