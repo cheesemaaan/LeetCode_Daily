@@ -1,6 +1,5 @@
 class Solution:
     def mostFrequentEven(self, nums: List[int]) -> int:
-        answer =[]
         even_nums = [x for x in nums if x%2 ==0]
         cnt = Counter(even_nums)
         if  not even_nums:
