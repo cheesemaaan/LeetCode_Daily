@@ -7,7 +7,6 @@ class Solution:
             return -1
         max_value = max(cnt.values())
         answer =[cnt for cnt,value in cnt.items() if value==max_value]
-            
         return min(answer)
 
 
