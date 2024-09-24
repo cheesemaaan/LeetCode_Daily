@@ -6,11 +6,8 @@ class Solution:
         if  not even_nums:
             return -1
         max_value = max(cnt.values())
-        for cnt,value in cnt.items():
-            if value==max_value:
-                answer.append(cnt)
-        
-        
+        answer =[cnt for cnt,value in cnt.items() if value==max_value]
+            
         return min(answer)
 
 
