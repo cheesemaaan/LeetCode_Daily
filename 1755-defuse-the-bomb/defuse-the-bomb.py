@@ -8,7 +8,7 @@ class Solution:
             for i in range(len(code)):
                 for s in range(k):
                     sum_code+=code[((i+s+1)%len(code))]
-                    print(sum_code)
+                    
                 
                 answer[i]=sum_code
                 sum_code=0
@@ -18,6 +18,6 @@ class Solution:
                     sum_code+=code[((i-s-1)%len(code))]
                 answer[i]=sum_code
                 sum_code=0
-        print(answer)
+        
         return answer
                 
