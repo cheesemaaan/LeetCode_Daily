@@ -11,7 +11,8 @@ class Solution:
         not_dulplicated_nums = [k for k, _ in groupby(nums)]
         
         for i in range(1,len(not_dulplicated_nums)-1):
-            if not_dulplicated_nums[i] >not_dulplicated_nums[i-1] and not_dulplicated_nums[i]>not_dulplicated_nums[i+1] or \
-                not_dulplicated_nums[i]<not_dulplicated_nums[i-1] and not_dulplicated_nums[i] <not_dulplicated_nums[i+1]:
+            if not_dulplicated_nums[i] >not_dulplicated_nums[i-1] and not_dulplicated_nums[i]>not_dulplicated_nums[i+1]:
+                answer+=1
+            if not_dulplicated_nums[i]<not_dulplicated_nums[i-1] and not_dulplicated_nums[i] <not_dulplicated_nums[i+1]:
                 answer+=1    
         return answer
