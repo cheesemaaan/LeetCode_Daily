@@ -1,6 +1,6 @@
 class Solution:
     def maxDistance(self, colors: List[int]) -> int:
-        max_distance = 0
+        max_distance = 1
         n =len(colors)
         for i in range(n): 
             for j in range(i+1,n):
