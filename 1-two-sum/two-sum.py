@@ -8,7 +8,6 @@ class Solution:
         d= defaultdict(list)
         for i, num in enumerate(nums):
             d[num].append(i)
-        print(d)
 
         test = 0
         for i,num in enumerate(nums):
