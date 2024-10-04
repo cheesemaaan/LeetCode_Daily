@@ -13,9 +13,9 @@ class Solution:
         for i,num in enumerate(nums):
             test = target - num
             if test in d :
-                for j in d[test]:
-                    if i!=j:
-                        answer =[i,j]
+               
+                    if i!=d[test][0]:
+                        answer =[i,d[test][0]]
                         break
                 
         return answer
