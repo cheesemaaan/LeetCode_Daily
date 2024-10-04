@@ -7,11 +7,10 @@ class Solution:
                 amount = upper - prev
                 answer += amount*(percent*0.01)
                 prev = upper
-                print(answer)
+              
             else:
                 amount = income -prev
                 answer += amount*(percent*0.01)
-                print(answer)
                 break
 
        return answer
