@@ -15,5 +15,4 @@ class Solution:
             if test in d :
                 if i!=d[test][0]:
                     return [i,d[test][0]]
-            else:
-                continue       
+            
