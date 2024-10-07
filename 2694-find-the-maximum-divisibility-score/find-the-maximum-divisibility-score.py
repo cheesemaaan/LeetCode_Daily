@@ -8,14 +8,9 @@ class Solution:
                     score +=1
             d[divisor] = score
         
-        answer = inf
+     
         score_max = max(d.values())
-        for num,cnt in d.items():
-            if cnt == score_max:
-                answer = min(answer,num)
-
-        return answer
-
+        return min(divisor for divisor,score in d.items() if score==score_max)
 
         
     
