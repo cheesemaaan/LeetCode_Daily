@@ -29,17 +29,17 @@ class Solution:
         return answer
 
 
-        # 큰 수부터 매칭해서 더해준다.
-        keys = sorted(d.keys(), key=lambda x: d[x], reverse=True)
-        print(keys)
-        answer = 0
-        while s:
-            for key in keys:
-                if s.startswith(key):
-                    # answer에 해당 숫자만큼 더해주고
-                    # s에서 해당 문자열을 잘라내주기
-                    answer += d[key]
-                    s = s[len(key):]
-                    break
-        return answer
+        # # 큰 수부터 매칭해서 더해준다.
+        # keys = sorted(d.keys(), key=lambda x: d[x], reverse=True)
+        # print(keys)
+        # answer = 0
+        # while s:
+        #     for key in keys:
+        #         if s.startswith(key):
+        #             # answer에 해당 숫자만큼 더해주고
+        #             # s에서 해당 문자열을 잘라내주기
+        #             answer += d[key]
+        #             s = s[len(key):]
+        #             break
+        # return answer
 
