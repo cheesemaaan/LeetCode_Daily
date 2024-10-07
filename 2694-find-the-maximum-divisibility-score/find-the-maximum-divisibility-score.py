@@ -10,10 +10,7 @@ class Solution:
         print(d)
         
         answer = inf
-        if d.values():
-            score_max = max(d.values())
-        else:
-            return 0
+        score_max = max(d.values())
         for num,cnt in d.items():
             if cnt == score_max:
                 answer = min(answer,num)
