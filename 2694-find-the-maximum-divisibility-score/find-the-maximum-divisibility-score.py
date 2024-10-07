@@ -7,7 +7,6 @@ class Solution:
                 if num%divisor ==0:
                     score +=1
             d[divisor] = score
-        print(d)
         
         answer = inf
         score_max = max(d.values())
