@@ -1,3 +1,37 @@
+class Solution:
+    def freqAlphabets(self, s: str) -> str:
+        i=0
+        answer =""
+        print(s[2])
+        while i<len(s):
+            if i+2 < len(s) and s[i+2] == "#":
+                answer += chr(int(s[i:i+2])+96)
+                print(answer)
+                
+                i += 3
+            else:
+                answer +=chr(int(s[i])+96)
+                print(answer)
+                
+                i+=1
+        return answer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Solution:
 #     def freqAlphabets(self, s: str) -> str:
 #         cha_dict = {}
@@ -28,21 +62,21 @@
 #         # 리스트를 문자열로 변환하여 반환
 #         return ''.join(result)
 
-class Solution:
-    def freqAlphabets(self, s: str) -> str:
-        result = []
-        i = 0
-        n = len(s)
+# class Solution:
+#     def freqAlphabets(self, s: str) -> str:
+#         result = []
+#         i = 0
+#         n = len(s)
 
-        while i < n:
-            if i + 2 < n and s[i + 2] == '#':
-                # '10#'-'26#' 처리
-                num = s[i:i + 2]  # 두 자리 숫자
-                result.append(chr(int(num) + 96))  # 숫자를 알파벳으로 변환
-                i += 3  # 세 문자를 처리했으므로 인덱스를 3만큼 이동
-            else:
-                # '1'-'9' 처리
-                result.append(chr(int(s[i]) + 96))  # 한 자리 숫자를 알파벳으로 변환
-                i += 1  # 한 글자를 처리했으므로 인덱스를 1만큼 이동
+#         while i < n:
+#             if i + 2 < n and s[i + 2] == '#':
+#                 # '10#'-'26#' 처리
+#                 num = s[i:i + 2]  # 두 자리 숫자
+#                 result.append(chr(int(num) + 96))  # 숫자를 알파벳으로 변환
+#                 i += 3  # 세 문자를 처리했으므로 인덱스를 3만큼 이동
+#             else:
+#                 # '1'-'9' 처리
+#                 result.append(chr(int(s[i]) + 96))  # 한 자리 숫자를 알파벳으로 변환
+#                 i += 1  # 한 글자를 처리했으므로 인덱스를 1만큼 이동
 
-        return ''.join(result)
+#         return ''.join(result)
